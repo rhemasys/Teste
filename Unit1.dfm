@@ -33,20 +33,17 @@ object Form1: TForm1
     Width = 688
     Height = 324
     Hint = 'Gr'#225'fico das vendas por m'#234's'
-    BackWall.Brush.Color = clWhite
     BackWall.Brush.Style = bsClear
     Gradient.EndColor = clWhite
     Gradient.StartColor = clSilver
     Gradient.Visible = True
+    Legend.Shadow.HorizSize = 0
+    Legend.Shadow.VertSize = 0
     Title.Text.Strings = (
       'Gr'#225'fico de Vendas')
     LeftAxis.PositionPercent = -1.000000000000000000
-    LeftAxis.Title.Font.Charset = DEFAULT_CHARSET
     LeftAxis.Title.Font.Color = clWhite
-    LeftAxis.Title.Font.Height = -11
-    LeftAxis.Title.Font.Name = 'Arial'
     LeftAxis.Title.Font.Style = [fsBold]
-    Legend.ShadowSize = 0
     View3D = False
     Align = alBottom
     BevelInner = bvLowered
@@ -55,19 +52,16 @@ object Form1: TForm1
     ParentShowHint = False
     ShowHint = True
     TabOrder = 5
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
     object SerieVendas: TBarSeries
-      Marks.ArrowLength = 8
       Marks.Style = smsValue
-      Marks.Visible = True
+      Marks.Callout.Length = 8
       SeriesColor = clRed
       Title = 'NomeDaSerie'
-      XValues.DateTime = False
       XValues.Name = 'X'
-      XValues.Multiplier = 1.000000000000000000
       XValues.Order = loAscending
-      YValues.DateTime = False
       YValues.Name = 'Bar'
-      YValues.Multiplier = 1.000000000000000000
       YValues.Order = loNone
     end
   end
@@ -176,6 +170,14 @@ object Form1: TForm1
       TabOrder = 5
       Text = '2000,00'
       OnKeyPress = EditMesJanKeyPress
+    end
+    object Edit1: TEdit
+      Left = 182
+      Top = 18
+      Width = 121
+      Height = 21
+      TabOrder = 6
+      Text = 'Edit1'
     end
   end
   object BtnGerarGrafico: TButton

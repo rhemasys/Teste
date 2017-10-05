@@ -11,7 +11,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, TeEngine, Series, ExtCtrls, Chart, TeeProcs;
+  Dialogs, StdCtrls, TeEngine, Series, ExtCtrls, Chart, TeeProcs,
+  VclTee.TeeGDIPlus;
 
 type
   TForm1 = class(TForm)
@@ -36,6 +37,7 @@ type
     BtnAlterarTituloGrafico: TButton;
     Bevel1: TBevel;
     PrinterSetupDialog1: TPrinterSetupDialog;
+    Edit1: TEdit;
     procedure EditMesJanKeyPress(Sender: TObject; var Key: Char);
     procedure BtnGerarGraficoClick(Sender: TObject);
     procedure BtnImprirClick(Sender: TObject);
