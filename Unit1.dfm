@@ -171,14 +171,6 @@ object Form1: TForm1
       Text = '2000,00'
       OnKeyPress = EditMesJanKeyPress
     end
-    object Edit1: TEdit
-      Left = 182
-      Top = 18
-      Width = 121
-      Height = 21
-      TabOrder = 6
-      Text = 'Edit1'
-    end
   end
   object BtnGerarGrafico: TButton
     Left = 374
@@ -231,6 +223,14 @@ object Form1: TForm1
     ShowHint = True
     TabOrder = 3
     OnClick = BtnAlterarTituloGraficoClick
+  end
+  object Edit1: TEdit
+    Left = 95
+    Top = 107
+    Width = 121
+    Height = 21
+    TabOrder = 6
+    Text = 'Genilson Soares'
   end
   object PrinterSetupDialog1: TPrinterSetupDialog
     Left = 640
