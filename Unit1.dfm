@@ -230,7 +230,7 @@ object Form1: TForm1
     Width = 121
     Height = 21
     TabOrder = 6
-    Text = 'Genilson Soares'
+    Text = 'Genilson Silvania'
   end
   object PrinterSetupDialog1: TPrinterSetupDialog
     Left = 640
