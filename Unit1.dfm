@@ -224,14 +224,6 @@ object Form1: TForm1
     TabOrder = 3
     OnClick = BtnAlterarTituloGraficoClick
   end
-  object Edit1: TEdit
-    Left = 95
-    Top = 107
-    Width = 121
-    Height = 21
-    TabOrder = 6
-    Text = 'Genilson Silvania'
-  end
   object PrinterSetupDialog1: TPrinterSetupDialog
     Left = 640
     Top = 88

@@ -37,7 +37,6 @@ type
     BtnAlterarTituloGrafico: TButton;
     Bevel1: TBevel;
     PrinterSetupDialog1: TPrinterSetupDialog;
-    Edit1: TEdit;
     procedure EditMesJanKeyPress(Sender: TObject; var Key: Char);
     procedure BtnGerarGraficoClick(Sender: TObject);
     procedure BtnImprirClick(Sender: TObject);
